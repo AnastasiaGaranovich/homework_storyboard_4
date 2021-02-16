@@ -6,7 +6,7 @@ class AppData {
     static let phoneNumArray = ["5763322", "7871259", "8887721", "9812276", "7689010"]
     static let emailArray = ["lins@gmail.com", "sin@gmail.com", "omm@gmail.com", "sunset@gmail.com", "ilun@gmail.com"]
     
-    static var person = [Person]()
+    static var people = [Person]()
     
     static func createPerson() -> Person {
         return Person(name: nameArray.randomElement() ?? "",
@@ -17,7 +17,7 @@ class AppData {
     
     static func createData() {
         for _ in 0...10 {
-            person.append(createPerson())
+            people.append(createPerson())
         }
     }
 }
